@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- ============ META ============ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- EDIT: Title shown in browser tab & Google search -->
+  <title>Muzammil Zaib | Software Developer & Android App Developer</title>
+
+  <!-- EDIT: This description appears under your Google search result -->
+  <meta name="description"
+        content="Muzammil Zaib — Software Developer, Android App Developer and founder of Muzammil Nichari Marketing Agency. Building technology, creating solutions, turning ideas into digital impact." />
+
+  <!-- EDIT: Keywords (less important for SEO now, harmless) -->
+  <meta name="keywords" content="Muzammil Zaib, Software Developer, Android Developer, Kotlin, Python, Balochistan, Portfolio" />
+  <meta name="author" content="Muzammil Zaib" />
+
+  <!-- Social sharing preview (Facebook / LinkedIn / WhatsApp) -->
+  <meta property="og:title" content="Muzammil Zaib — Software Developer" />
+  <meta property="og:description" content="Building Technology. Creating Solutions. Turning Ideas Into Digital Impact." />
+  <meta property="og:image" content="images/muzammil-profile.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- ============ FONTS & ICONS ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- ============ STYLES ============ -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================= -->
+  <!-- =======================  NAVBAR  ============================ -->
+  <!-- ============================================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+
+      <!-- EDIT: Your brand / logo text -->
+      <a href="#hero" class="logo">MZ<span>.</span></a>
+
+      <!-- Desktop navigation links -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ai">AI Experience</a></li>
+        <li><a href="#agency">Agency</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Right side controls: theme toggle + mobile menu button -->
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown menu (toggled by JS) -->
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#ai">AI Experience</a></li>
+      <li><a href="#agency">Agency</a></li>
+      <li><a href="#vision">Vision</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ============================================================= -->
+  <!-- ========================  HERO  ============================= -->
+  <!-- ============================================================= -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+
+      <!-- LEFT: text content -->
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Muzammil Zaib</h1>
+        <h2 class="hero-title">
+          <span id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-tagline">
+          Building Technology. Creating Solutions. Turning Ideas Into Digital Impact.
+        </p>
+
+        <!-- Hero buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-code"></i> Explore My Projects
+          </a>
+
+          <!-- EDIT: Put your CV file at assets/Muzammil-Zaib-CV.pdf -->
+          <a href="assets/Muzammil-Zaib-CV.pdf" class="btn btn-ghost" download>
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+
+          <a href="#contact" class="btn btn-ghost">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+
+        <!-- Social icons (EDIT each href with your real URLs) -->
+        <div class="hero-socials">
+          <a href="[ADD MY GITHUB PROFILE]" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-muzammil-713b16267?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/share/1AHK7qe2Js/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/muzammil_zaib0?cplk=NThqaDBmcTc2dmgz" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- RIGHT: profile photo -->
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <!-- EDIT: Replace this file with your real professional photo -->
+          <img src="images/muzammil-profile.jpg" alt="Muzammil Zaib" class="profile-img" />
+        </div>
+        <div class="photo-glow"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- ========================  ABOUT  ============================ -->
+  <!-- ============================================================= -->
+  <section class="section" id="about">
+    <h2 class="section-title">About <span>Me</span></h2>
+    <div class="about-card reveal">
+      <p>
+        I am <strong>Muzammil Zaib</strong>, a Computer Science student and software
+        developer from <strong>Balochistan, Pakistan</strong>. I build practical
+        software solutions, Android applications, desktop management systems and
+        digital products that solve real-world problems.
+      </p>
+      <p>
+        I have hands-on experience with <strong>Python, Kotlin, Android Studio,
+        Tkinter, SQLite, Flask and REST APIs</strong>. Over <strong>14+ software
+        projects</strong> have given me real practice in application development,
+        database management, business automation and problem-solving.
+      </p>
+      <p>
+        I also participated in the <strong>Digital Balochistan AI Boot Camp</strong>
+        in Islamabad, exploring artificial intelligence, prompt engineering, digital
+        tools, freelancing and e-commerce. I believe in continuous learning and
+        turning ideas into useful digital solutions.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- ======================  EDUCATION  ========================== -->
+  <!-- ============================================================= -->
+  <section class="section" id="education">
+    <h2 class="section-title">Edu<span>cation</span></h2>
+    <div class="timeline reveal">
+
+      <!-- EDIT: Add / remove timeline-item blocks for more education entries -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>BS Computer Science</h3>
+          <p class="timeline-sub">Balochistan University of Engineering &amp; Technology (BUETK), Khuzdar</p>
+          <p class="timeline-meta">8th Semester · Current</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Digital Balochistan AI Boot Camp</h3>
+          <p class="timeline-sub">Islamabad · Government of Balochistan</p>
+          <p class="timeline-meta">AI · Prompt Engineering · Digital Skills</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- =======================  SKILLS  ============================ -->
+  <!-- ============================================================= -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+
+    <div class="skills-grid reveal">
+
+      <!-- Each card = one skill group. EDIT title, icon and list freely -->
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Programming</h3>
+        <ul>
+          <li>Python</li>
+          <li>Kotlin</li>
+          <li>JavaScript (learning)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-brands fa-android"></i></div>
+        <h3>Android Development</h3>
+        <ul>
+          <li>Android Studio</li>
+          <li>Kotlin</li>
+          <li>Jetpack Compose</li>
+          <li>Android UI</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-desktop"></i></div>
+        <h3>Desktop Development</h3>
+        <ul>
+          <li>Python Tkinter</li>
+          <li>SQLite</li>
+          <li>Management Systems</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+        <h3>Backend</h3>
+        <ul>
+          <li>Flask</li>
+          <li>REST APIs</li>
+          <li>CORS</li>
+          <li>Database Connectivity</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Databases</h3>
+        <ul>
+          <li>SQLite</li>
+          <li>Firebase (learning)</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>AI &amp; Digital Tools</h3>
+        <ul>
+          <li>ChatGPT</li>
+          <li>Google Gemini</li>
+          <li>NotebookLM</li>
+          <li>Gamma AI</li>
+          <li>Lovable AI</li>
+          <li>Canva</li>
+          <li>Prompt Engineering</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h3>Developer Tools</h3>
+        <ul>
+          <li>Git &amp; GitHub</li>
+          <li>VS Code</li>
+          <li>Anaconda</li>
+          <li>Jupyter Notebook</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- ======================  PROJECTS  =========================== -->
+  <!-- ============================================================= -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Featured <span>Projects</span></h2>
+
+    <div class="projects-grid reveal">
+
+      <!-- ============ PROJECT 1 ============ -->
+      <article class="project-card">
+        <!-- EDIT: Replace with your real screenshot at images/project-travel.jpg -->
+        <div class="project-img">
+          <img src="images/project-travel.jpg" alt="Balochistan Travel & Tourism app" />
+        </div>
+        <div class="project-body">
+          <p class="project-category">Android Application</p>
+          <h3>Balochistan Travel &amp; Tourism</h3>
+          <p class="project-desc">
+            A tourism Android app to promote Balochistan with destinations, picnic
+            spots, travel routes, road status, travel agencies, transport and fuel
+            stations — plus user travel memories.
+          </p>
+          <div class="tags">
+            <span>Kotlin</span><span>Android Studio</span><span>Flask</span><span>REST API</span><span>JSON</span>
+          </div>
+          <div class="project-links">
+            <!-- EDIT: replace # with your real repo / demo URL -->
+            <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ PROJECT 2 ============ -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="images/project-cotton.jpg" alt="MZ Cotton Software" />
+        </div>
+        <div class="project-body">
+          <p class="project-category">Desktop Software</p>
+          <h3>MZ Cotton Software</h3>
+          <p class="project-desc">
+            Desktop business management for cotton purchasing &amp; trading —
+            farmer management, purchase records, stock, cash, business records and
+            automatic weight calculations based on local rules.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>Tkinter</span><span>SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ============ PROJECT 3 ============ -->
+      <article class="project-card">
+        <div class="project-img">
+          <img src="images/project-school.jpg" alt="ALFA Public School Management System" />
+        </div>
+        <div class="project-body">
+          <p class="project-category">School Management Software</p>
+          <h3>ALFA Public School System</h3>
+          <p class="project-desc">
+            An offline school management system handling students, classes, teachers,
+            examinations, fees, staff and reports — built for real school operations.
+          </p>
+          <div class="tags">
+            <span>Python</span><span>SQLite</span><span>Tkinter</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="#" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Additional projects hint — you can add more <article> blocks above -->
+    <p class="projects-note reveal">
+      <i class="fa-solid fa-circle-info"></i>
+      I've worked on <strong>14+ projects</strong>. More case studies coming soon.
+    </p>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- ==============  AI EXPERIENCE & TRAINING  ==================== -->
+  <!-- ============================================================= -->
+  <section class="section" id="ai">
+    <h2 class="section-title">AI Experience &amp; <span>Training</span></h2>
+
+    <div class="ai-card reveal">
+      <h3><i class="fa-solid fa-brain"></i> Digital Balochistan AI Boot Camp — Islamabad</h3>
+      <p>
+        Participated in the Digital Balochistan AI Boot Camp in Islamabad, supported
+        by the Government of Balochistan. Explored artificial intelligence, prompt
+        engineering and modern digital tools.
+      </p>
+
+      <div class="ai-topics">
+        <span>Artificial Intelligence</span>
+        <span>Prompt Engineering</span>
+        <span>ChatGPT</span>
+        <span>Google Gemini</span>
+        <span>NotebookLM</span>
+        <span>Gamma AI</span>
+        <span>Canva</span>
+        <span>Lovable AI</span>
+        <span>GitHub</span>
+        <span>Portfolio Development</span>
+        <span>Freelancing</span>
+        <span>E-commerce</span>
+        <span>Coursera</span>
+        <span>Google Career Certificates</span>
+      </div>
+
+      <!-- EDIT: Drop certificate images into /certificates and list them here -->
+      <div class="certificates">
+        <p class="cert-label">Certificates &amp; Photos:</p>
+        <div class="cert-grid">
+          <div class="cert-placeholder"><i class="fa-regular fa-image"></i><span>certificates/bootcamp.jpg</span></div>
+          <div class="cert-placeholder"><i class="fa-regular fa-image"></i><span>certificates/certificate-1.jpg</span></div>
+          <div class="cert-placeholder"><i class="fa-regular fa-image"></i><span>certificates/certificate-2.jpg</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- ======================  AGENCY  ============================= -->
+  <!-- ============================================================= -->
+  <section class="section" id="agency">
+    <h2 class="section-title">My <span>Agency</span></h2>
+
+    <div class="agency-card reveal">
+      <div class="agency-header">
+        <!-- EDIT: Replace with your real logo at images/agency-logo.png -->
+        <img src="images/agency-logo.png" alt="Muzammil Nichari Marketing Agency" class="agency-logo" />
+        <div>
+          <h3>Muzammil Nichari Marketing Agency</h3>
+          <p class="agency-tagline">From Ideas to Digital Impact</p>
+          <p class="agency-role">Founder</p>
+        </div>
+      </div>
+
+      <div class="agency-services">
+        <!-- Each card = one service -->
+        <div class="service"><i class="fa-brands fa-android"></i><span>Android App Development</span></div>
+        <div class="service"><i class="fa-solid fa-laptop-code"></i><span>Custom Software Solutions</span></div>
+        <div class="service"><i class="fa-solid fa-school"></i><span>School Management Systems</span></div>
+        <div class="service"><i class="fa-solid fa-seedling"></i><span>Cotton Business Software</span></div>
+        <div class="service"><i class="fa-solid fa-briefcase"></i><span>Business Management Systems</span></div>
+        <div class="service"><i class="fa-solid fa-pen-nib"></i><span>Logo &amp; Graphic Design</span></div>
+        <div class="service"><i class="fa-solid fa-images"></i><span>Social Media Post Design</span></div>
+        <div class="service"><i class="fa-solid fa-bullhorn"></i><span>Social Media Management</span></div>
+        <div class="service"><i class="fa-solid fa-file-signature"></i><span>Online Job Application Help</span></div>
+      </div>
+    </div>
+
+    <!-- ============ Small side-venture card (Comfort Knitses) ============ -->
+    <div class="side-venture reveal">
+      <h3><i class="fa-solid fa-heart"></i> Comfort Knitses</h3>
+      <p>
+        A small handmade-wool brand — baby woolen suits, handbags, gloves and other
+        handmade woolen products. A creative side venture, not a software project.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- ==============  COMMUNITY / DIGITAL INITIATIVES  ============= -->
+  <!-- ============================================================= -->
+  <section class="section" id="community">
+    <h2 class="section-title">Community <span>Initiatives</span></h2>
+
+    <div class="initiative-card reveal">
+      <span class="initiative-status planned">Planned</span>
+      <h3>Youth Digital Skills &amp; AI Webinar</h3>
+      <p class="initiative-loc"><i class="fa-solid fa-location-dot"></i> BUETK Sub-Campus Uthal</p>
+      <p>
+        A planned webinar aimed at introducing young people in Balochistan to digital
+        skills and artificial intelligence — with the idea of involving
+        <strong>Tech Valley Islamabad</strong>.
+      </p>
+      <p class="initiative-note">
+        <em>Status: planned — not yet held.</em>
+      </p>
+    </div>
+
+    <div class="initiative-card reveal">
+      <span class="initiative-status goal">Goal</span>
+      <h3>Promoting Digital Skills in Balochistan</h3>
+      <p>
+        I want to help spread digital skills, AI awareness and technology education
+        across Balochistan so young people can explore real opportunities in tech.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- =======================  VISION  ============================ -->
+  <!-- ============================================================= -->
+  <section class="section" id="vision">
+    <h2 class="section-title">Career <span>Vision</span></h2>
+
+    <div class="vision-card reveal">
+      <p class="vision-quote">
+        “My journey is just beginning. I believe in learning, building, creating
+        opportunities, and turning ideas into real-world solutions.”
+      </p>
+      <ul class="vision-list">
+        <li><i class="fa-solid fa-check"></i> Become a professional software developer</li>
+        <li><i class="fa-solid fa-check"></i> Build practical Android applications</li>
+        <li><i class="fa-solid fa-check"></i> Deliver reliable software for businesses</li>
+        <li><i class="fa-solid fa-check"></i> Work with international freelance clients</li>
+        <li><i class="fa-solid fa-check"></i> Grow my personal professional brand</li>
+        <li><i class="fa-solid fa-check"></i> Support digital transformation in Balochistan</li>
+        <li><i class="fa-solid fa-check"></i> Help young people explore technology &amp; AI</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- =======================  CONTACT  =========================== -->
+  <!-- ============================================================= -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+    <p class="contact-sub">
+      Have a project or idea? Fill out the form or reach me directly.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- LEFT: contact info block -->
+      <div class="contact-info reveal">
+        <!-- EDIT: Replace with your real email -->
+        <a href="mailto:muzammilzaib54@gmail.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>muzammilzaib54@gmail.com</span>
+        </a>
+
+        <!-- EDIT: Replace with your real WhatsApp number -->
+        <a href="https://wa.me/+923426855439" target="_blank" class="contact-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <a href="[ADD MY GITHUB PROFILE]" target="_blank" class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/muhammad-muzammil-713b16267?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+
+      </div>
+
+      <!-- RIGHT: contact form -->
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <!-- IMPORTANT:
+             This form is FRONT-END ONLY.
+             To actually receive messages, connect it to Formspree:
+             see README / instructions at bottom of script.js -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================= -->
+  <!-- =======================  FOOTER  ============================ -->
+  <!-- ============================================================= -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Muzammil Zaib · Building Ideas Into Digital Solutions.</p>
+    <p class="footer-sub">Designed &amp; developed by Muzammil Zaib</p>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="js/script.js"></script>
+</body>
+</html> 
